@@ -18,7 +18,7 @@ The site should remain a static Next.js export, use Git-backed content, and allo
 
 ## Phase 1: TinaCloud Setup
 
-Create and connect the production TinaCloud project in `https://app.tina.io`.
+Configure the connected production TinaCloud project in `https://app.tina.io`.
 
 ### Repo Status
 
@@ -29,13 +29,12 @@ The repository-side Phase 1 setup is implemented:
 - `pnpm tina:validate` checks required TinaCloud env vars and content paths.
 - `README.md` documents the `app.tina.io` setup flow.
 
-The remaining Phase 1 work requires access to `app.tina.io` and the connected GitHub repository.
+The TinaCloud project is connected in `app.tina.io`. The remaining Phase 1 work is environment-variable setup for local development and Cloudflare Pages.
 
 ### Tasks
 
-- Create a TinaCloud project for this repository in `app.tina.io`.
-- Connect the GitHub repository that will host this codebase.
-- Set the production branch to `main`, unless the deployment branch changes before launch.
+- Confirm the connected TinaCloud project uses this GitHub repository.
+- Confirm the production branch is `main`, unless the deployment branch changes before launch.
 - Copy the Tina project client ID into `NEXT_PUBLIC_TINA_CLIENT_ID`.
 - Create or copy the Tina token into `TINA_TOKEN`.
 - Confirm `NEXT_PUBLIC_TINA_BRANCH=main` is set for local and Cloudflare environments.

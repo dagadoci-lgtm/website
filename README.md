@@ -13,15 +13,13 @@ The site runs at `http://localhost:3000`. Tina admin is available at `http://loc
 
 ## TinaCloud
 
-Create the production CMS project in `https://app.tina.io`.
+The production CMS project is connected in `https://app.tina.io`. Finish local and Cloudflare setup by copying the TinaCloud environment values.
 
-1. Create a TinaCloud project.
-2. Connect the GitHub repository for this website.
-3. Set the project branch to `main`, unless the launch branch changes.
-4. Copy the project client ID into `NEXT_PUBLIC_TINA_CLIENT_ID`.
-5. Create or copy the read/write token into `TINA_TOKEN`.
-6. Set `NEXT_PUBLIC_TINA_BRANCH=main`.
-7. Add the same values to Cloudflare Pages environment variables.
+1. Confirm the TinaCloud project branch is `main`, unless the launch branch changes.
+2. Copy the project client ID into `NEXT_PUBLIC_TINA_CLIENT_ID`.
+3. Create or copy the read/write token into `TINA_TOKEN`.
+4. Set `NEXT_PUBLIC_TINA_BRANCH=main`.
+5. Add the same values to Cloudflare Pages environment variables.
 
 Local environment values should live in `.env.local`:
 
