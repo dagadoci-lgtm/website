@@ -9,7 +9,7 @@ pnpm install
 pnpm dev
 ```
 
-The site runs at `http://localhost:3000`. Tina admin is available at `http://localhost:3000/admin/index.html`.
+The site runs at `http://localhost:3000`. Tina admin is available at `http://localhost:3000/admin/index.html`. Use the full `/admin/index.html` path; `/admin/` can show the Next.js 404 page during local development.
 
 ## TinaCloud
 
