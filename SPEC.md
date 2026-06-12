@@ -64,6 +64,7 @@ Deploy the static site and Tina admin to Cloudflare Pages.
   - Framework preset: `Next.js`
   - Build command: `pnpm build`
   - Output directory: `out`
+  - Deploy command: `npx wrangler pages deploy out --project-name=website --branch=$CF_PAGES_BRANCH`
   - Node.js version: current LTS
 - Add Cloudflare Pages environment variables:
   - `NEXT_PUBLIC_TINA_CLIENT_ID`
@@ -79,6 +80,8 @@ Deploy the static site and Tina admin to Cloudflare Pages.
 - Home, `/projects`, and all `/projects/[slug]` pages load from Cloudflare.
 - `/admin/index.html` loads on the deployed domain.
 - TinaCloud edits can be published and reflected in the next Cloudflare deployment.
+- Cloudflare does not run `pnpm opennextjs-cloudflare build`; this site is a static export, not an OpenNext Workers deployment.
+- If the Cloudflare Pages project name is not `website`, the Wrangler deploy command uses the actual Pages project name.
 
 ## Phase 3: Portfolio Content Completion
 

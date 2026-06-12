@@ -44,6 +44,7 @@ Use these Pages settings:
 - Framework preset: `Next.js`
 - Build command: `pnpm build`
 - Build output directory: `out`
+- Deploy command: `npx wrangler pages deploy out --project-name=website --branch=$CF_PAGES_BRANCH`
 - Node.js version: current LTS
 
-This app uses `output: "export"` and unoptimized images so it can be served as static assets.
+This app uses `output: "export"` and unoptimized images so it can be served as static assets. Replace `website` in the deploy command if the Cloudflare Pages project uses a different project name. Do not use `pnpm opennextjs-cloudflare build`; this project does not produce `.next/standalone` output.

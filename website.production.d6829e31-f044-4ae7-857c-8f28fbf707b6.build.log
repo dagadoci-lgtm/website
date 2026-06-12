@@ -1,0 +1,111 @@
+2026-06-12T18:23:30.456Z	Initializing build environment...
+2026-06-12T18:23:32.826Z	Success: Finished initializing build environment
+2026-06-12T18:23:33.453Z	Cloning repository...
+2026-06-12T18:23:35.255Z	Restoring from dependencies cache
+2026-06-12T18:23:35.258Z	Restoring from build output cache
+2026-06-12T18:23:36.918Z	Detected the following tools from environment: pnpm@10.12.1, nodejs@22.16.0
+2026-06-12T18:23:38.533Z	Installing project dependencies: pnpm install --frozen-lockfile
+2026-06-12T18:23:39.398Z	Lockfile is up to date, resolution step is skipped
+2026-06-12T18:23:39.527Z	Progress: resolved 1, reused 0, downloaded 0, added 0
+2026-06-12T18:23:39.729Z	Packages: +1224
+2026-06-12T18:23:39.733Z	++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2026-06-12T18:23:40.531Z	Progress: resolved 1224, reused 0, downloaded 16, added 0
+2026-06-12T18:23:41.531Z	Progress: resolved 1224, reused 0, downloaded 125, added 39
+2026-06-12T18:23:42.532Z	Progress: resolved 1224, reused 0, downloaded 218, added 69
+2026-06-12T18:23:43.533Z	Progress: resolved 1224, reused 0, downloaded 231, added 73
+2026-06-12T18:23:44.534Z	Progress: resolved 1224, reused 0, downloaded 246, added 77
+2026-06-12T18:23:45.535Z	Progress: resolved 1224, reused 0, downloaded 353, added 126
+2026-06-12T18:23:46.536Z	Progress: resolved 1224, reused 0, downloaded 451, added 165
+2026-06-12T18:23:47.537Z	Progress: resolved 1224, reused 0, downloaded 529, added 197
+2026-06-12T18:23:48.541Z	Progress: resolved 1224, reused 0, downloaded 590, added 220
+2026-06-12T18:23:49.539Z	Progress: resolved 1224, reused 0, downloaded 689, added 254
+2026-06-12T18:23:50.541Z	Progress: resolved 1224, reused 0, downloaded 749, added 301
+2026-06-12T18:23:51.542Z	Progress: resolved 1224, reused 0, downloaded 763, added 301
+2026-06-12T18:23:52.541Z	Progress: resolved 1224, reused 0, downloaded 815, added 317
+2026-06-12T18:23:53.550Z	Progress: resolved 1224, reused 0, downloaded 841, added 325
+2026-06-12T18:23:54.551Z	Progress: resolved 1224, reused 0, downloaded 856, added 329
+2026-06-12T18:23:55.551Z	Progress: resolved 1224, reused 0, downloaded 939, added 363
+2026-06-12T18:23:56.552Z	Progress: resolved 1224, reused 0, downloaded 1011, added 394
+2026-06-12T18:23:57.554Z	Progress: resolved 1224, reused 0, downloaded 1063, added 423
+2026-06-12T18:23:59.418Z	Progress: resolved 1224, reused 0, downloaded 1064, added 423
+2026-06-12T18:24:00.419Z	Progress: resolved 1224, reused 0, downloaded 1077, added 427
+2026-06-12T18:24:01.421Z	Progress: resolved 1224, reused 0, downloaded 1078, added 427
+2026-06-12T18:24:02.461Z	Progress: resolved 1224, reused 0, downloaded 1119, added 450
+2026-06-12T18:24:03.462Z	Progress: resolved 1224, reused 0, downloaded 1217, added 484
+2026-06-12T18:24:04.463Z	Progress: resolved 1224, reused 0, downloaded 1223, added 750
+2026-06-12T18:24:05.464Z	Progress: resolved 1224, reused 0, downloaded 1223, added 1000
+2026-06-12T18:24:05.920Z	Progress: resolved 1224, reused 0, downloaded 1223, added 1224, done
+2026-06-12T18:24:06.642Z	
+2026-06-12T18:24:06.644Z	dependencies:
+2026-06-12T18:24:06.647Z	+ @tinacms/cli 2.4.4
+2026-06-12T18:24:06.648Z	+ next 15.5.19
+2026-06-12T18:24:06.648Z	+ react 18.3.1
+2026-06-12T18:24:06.649Z	+ react-dom 18.3.1
+2026-06-12T18:24:06.649Z	+ tinacms 3.9.1
+2026-06-12T18:24:06.649Z	
+2026-06-12T18:24:06.649Z	devDependencies:
+2026-06-12T18:24:06.649Z	+ @eslint/eslintrc 3.3.5
+2026-06-12T18:24:06.649Z	+ @types/node 25.9.3
+2026-06-12T18:24:06.651Z	+ @types/react 18.3.31
+2026-06-12T18:24:06.651Z	+ @types/react-dom 18.3.7
+2026-06-12T18:24:06.651Z	+ eslint 9.39.4
+2026-06-12T18:24:06.651Z	+ eslint-config-next 15.5.19
+2026-06-12T18:24:06.651Z	+ typescript 5.9.3
+2026-06-12T18:24:06.651Z	
+2026-06-12T18:24:06.651Z	╭ Warning ─────────────────────────────────────────────────────────────────────╮
+2026-06-12T18:24:06.651Z	│                                                                              │
+2026-06-12T18:24:06.651Z	│   Ignored build scripts: better-sqlite3, core-js, esbuild, sharp,            │
+2026-06-12T18:24:06.652Z	│   unrs-resolver.                                                             │
+2026-06-12T18:24:06.652Z	│   Run "pnpm approve-builds" to pick which dependencies should be allowed     │
+2026-06-12T18:24:06.652Z	│   to run scripts.                                                            │
+2026-06-12T18:24:06.652Z	│                                                                              │
+2026-06-12T18:24:06.652Z	╰──────────────────────────────────────────────────────────────────────────────╯
+2026-06-12T18:24:06.652Z	
+2026-06-12T18:24:06.678Z	Done in 27.9s using pnpm v10.12.1
+2026-06-12T18:24:06.947Z	Executing user build command: pnpm run build
+2026-06-12T18:24:07.487Z	
+2026-06-12T18:24:07.487Z	> drew-website@0.1.0 build /opt/buildhome/repo
+2026-06-12T18:24:07.488Z	> node scripts/build.mjs
+2026-06-12T18:24:07.488Z	
+2026-06-12T18:24:09.898Z	Starting Tina build
+2026-06-12T18:24:17.998Z	{
+2026-06-12T18:24:17.999Z	  "heading": "Error when checking client information",
+2026-06-12T18:24:17.999Z	  "items": [
+2026-06-12T18:24:17.999Z	    {
+2026-06-12T18:24:17.999Z	      "emoji": "❌",
+2026-06-12T18:24:17.999Z	      "heading": "You provided",
+2026-06-12T18:24:17.999Z	      "subItems": [
+2026-06-12T18:24:17.999Z	        {
+2026-06-12T18:24:17.999Z	          "key": "clientId",
+2026-06-12T18:24:17.999Z	          "value": "5a1d9375-8b43-4388-a918-8494515ddb69"
+2026-06-12T18:24:17.999Z	        },
+2026-06-12T18:24:18.000Z	        {
+2026-06-12T18:24:18.000Z	          "key": "branch",
+2026-06-12T18:24:18.000Z	          "value": "main"
+2026-06-12T18:24:18.000Z	        },
+2026-06-12T18:24:18.000Z	        {
+2026-06-12T18:24:18.000Z	          "key": "token",
+2026-06-12T18:24:18.000Z	          "value": "1f133790b8acdf1d74affcbd49821613dab03f34"
+2026-06-12T18:24:18.000Z	        }
+2026-06-12T18:24:18.001Z	      ]
+2026-06-12T18:24:18.001Z	    }
+2026-06-12T18:24:18.001Z	  ]
+2026-06-12T18:24:18.004Z	}
+2026-06-12T18:24:18.004Z	
+2026-06-12T18:24:18.005Z	
+2026-06-12T18:24:18.005Z	Server responded with status code 403, Forbidden. Please check that your client ID, URL and read only token are configured properly.
+2026-06-12T18:24:18.005Z	
+2026-06-12T18:24:18.005Z	Message from server: not authorized to access branch Please see our FAQ for more information: https://tina.io/docs/r/FAQ/
+2026-06-12T18:24:18.005Z	
+2026-06-12T18:24:18.149Z	Error: Server responded with status code 403, Forbidden. Please check that your client ID, URL and read only token are configured properly.
+2026-06-12T18:24:18.153Z	
+2026-06-12T18:24:18.153Z	Message from server: not authorized to access branch Please see our FAQ for more information: https://tina.io/docs/r/FAQ/
+2026-06-12T18:24:18.153Z	    at BuildCommand.execute (file:///opt/buildhome/repo/node_modules/.pnpm/@tinacms+cli@2.4.4_@codemirror+language@6.0.0_@types+node@25.9.3_@types+react-dom@18.3._888d7179ef16759d3c8dadd26c087f93/node_modules/@tinacms/cli/dist/index.js:3551:29)
+2026-06-12T18:24:18.153Z	    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-06-12T18:24:18.153Z	    at async BuildCommand.validateAndExecute (/opt/buildhome/repo/node_modules/.pnpm/clipanion@3.2.1_typanion@3.13.0/node_modules/clipanion/lib/advanced/Command.js:73:26)
+2026-06-12T18:24:18.154Z	    at async Cli.run (/opt/buildhome/repo/node_modules/.pnpm/clipanion@3.2.1_typanion@3.13.0/node_modules/clipanion/lib/advanced/Cli.js:223:24)
+2026-06-12T18:24:18.154Z	    at async Cli.runExit (/opt/buildhome/repo/node_modules/.pnpm/clipanion@3.2.1_typanion@3.13.0/node_modules/clipanion/lib/advanced/Cli.js:232:28) {
+2026-06-12T18:24:18.154Z	  errorCode: 'ERR_CLOUD_CHECK_FAILED'
+2026-06-12T18:24:18.154Z	}
+2026-06-12T18:24:18.278Z	 ELIFECYCLE  Command failed with exit code 1.
+2026-06-12T18:24:18.438Z	Failed: error occurred while running build command
