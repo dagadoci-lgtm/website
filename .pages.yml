@@ -1,0 +1,303 @@
+media:
+  input: public/uploads
+  output: /uploads
+  rename: safe
+  categories: [image]
+
+settings:
+  content:
+    merge: true
+  commit:
+    identity: user
+    templates:
+      create: "content: create {path}"
+      update: "content: update {path}"
+      delete: "content: delete {path}"
+      rename: "content: rename {oldPath} to {newPath}"
+
+content:
+  - name: site_content
+    label: Site content
+    type: group
+    items:
+      - name: site_settings
+        label: Site settings
+        type: file
+        path: content/settings/site.json
+        format: json
+        operations:
+          create: false
+          rename: false
+          delete: false
+        fields:
+          - name: title
+            label: Site title
+            type: string
+            required: true
+          - name: description
+            label: SEO description
+            type: text
+            required: true
+            options:
+              minlength: 50
+              maxlength: 160
+          - name: siteUrl
+            label: Production URL
+            type: string
+            required: true
+            pattern:
+              regex: "^https://[^/]+(?:/.*)?$"
+              message: Use a complete HTTPS URL.
+            description: Used for canonical links, the sitemap, and social sharing.
+          - name: navLinks
+            label: Navigation links
+            type: object
+            required: true
+            list:
+              min: 1
+              collapsible:
+                collapsed: true
+                summary: "{label}"
+            fields:
+              - name: label
+                type: string
+                required: true
+              - name: href
+                label: URL or path
+                type: string
+                required: true
+          - name: socialLinks
+            label: Contact and social links
+            type: object
+            list:
+              collapsible:
+                collapsed: true
+                summary: "{label}"
+            fields:
+              - name: label
+                type: string
+                required: true
+              - name: href
+                label: URL or mailto link
+                type: string
+                required: true
+          - name: footerText
+            label: Footer text
+            type: string
+            required: true
+
+      - name: home_page
+        label: Home page
+        type: file
+        path: content/pages/home.json
+        format: json
+        operations:
+          create: false
+          rename: false
+          delete: false
+        fields:
+          - name: eyebrow
+            label: Hero eyebrow
+            type: string
+            required: true
+          - name: headline
+            label: Hero headline
+            type: text
+            required: true
+          - name: intro
+            label: Hero introduction
+            type: text
+            required: true
+          - name: primaryCtaLabel
+            label: Primary button label
+            type: string
+            required: true
+          - name: primaryCtaHref
+            label: Primary button URL
+            type: string
+            required: true
+          - name: secondaryCtaLabel
+            label: Secondary button label
+            type: string
+            required: true
+          - name: secondaryCtaHref
+            label: Secondary button URL
+            type: string
+            required: true
+          - name: availabilityTitle
+            label: Availability heading
+            type: string
+            required: true
+          - name: availabilityText
+            label: Availability text
+            type: text
+            required: true
+          - name: projectsHeading
+            label: Projects heading
+            type: string
+            required: true
+          - name: projectsIntro
+            label: Projects introduction
+            type: text
+            required: true
+          - name: experienceHeading
+            label: Experience heading
+            type: string
+            required: true
+          - name: skillsHeading
+            label: Skills heading
+            type: string
+            required: true
+
+  - name: portfolio
+    label: Portfolio
+    type: group
+    items:
+      - name: projects
+        label: Projects
+        type: collection
+        path: content/projects
+        format: yaml-frontmatter
+        filename:
+          template: "{primary}.md"
+          field: true
+        view:
+          fields: [title, role, featured, order]
+          primary: title
+          sort: [order, title, date]
+          search: [title, summary, role]
+          default:
+            sort: order
+            order: asc
+        fields:
+          - name: title
+            type: string
+            required: true
+          - name: date
+            label: Last updated
+            type: date
+            required: true
+            options:
+              time: false
+              format: yyyy-MM-dd
+          - name: summary
+            type: text
+            required: true
+            options:
+              minlength: 30
+              maxlength: 240
+          - name: coverImage
+            label: Cover image
+            type: image
+            required: true
+          - name: coverImageAlt
+            label: Cover image alt text
+            type: string
+            required: true
+            description: Describe meaningful visual content for screen-reader users.
+          - name: role
+            type: string
+            required: true
+          - name: stack
+            label: Tools and technologies
+            type: string
+            list:
+              min: 1
+            required: true
+          - name: featured
+            label: Feature on home page
+            type: boolean
+            required: true
+          - name: order
+            label: Display order
+            type: number
+            required: true
+            options:
+              min: 1
+          - name: body
+            label: Case study
+            type: rich-text
+            required: true
+            options:
+              format: markdown
+              switcher: true
+              rename: safe
+
+      - name: experience
+        label: Experience
+        type: collection
+        path: content/experience
+        format: json
+        filename:
+          template: "{company}.json"
+          field: create
+        view:
+          fields: [company, role, startDate, order]
+          primary: company
+          sort: [order, startDate, company]
+          search: [company, role, location]
+          default:
+            sort: order
+            order: asc
+        fields:
+          - name: company
+            type: string
+            required: true
+          - name: role
+            type: string
+            required: true
+          - name: startDate
+            label: Start date label
+            type: string
+            required: true
+            description: A display value such as 2023 or Jan 2023.
+          - name: endDate
+            label: End date label
+            type: string
+            description: Leave empty to display Present.
+          - name: location
+            type: string
+            required: true
+          - name: highlights
+            type: string
+            list:
+              min: 1
+            required: true
+          - name: order
+            label: Display order
+            type: number
+            required: true
+            options:
+              min: 1
+
+      - name: skills
+        label: Skill groups
+        type: collection
+        path: content/skills
+        format: json
+        filename:
+          template: "{category}.json"
+          field: create
+        view:
+          fields: [category, order]
+          primary: category
+          sort: [order, category]
+          search: [category]
+          default:
+            sort: order
+            order: asc
+        fields:
+          - name: category
+            type: string
+            required: true
+          - name: skills
+            type: string
+            list:
+              min: 1
+            required: true
+          - name: order
+            label: Display order
+            type: number
+            required: true
+            options:
+              min: 1

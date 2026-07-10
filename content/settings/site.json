@@ -1,0 +1,26 @@
+{
+  "title": "Drew",
+  "description": "Drew designs and builds clear, durable digital products, thoughtful interfaces, and content-rich web experiences.",
+  "siteUrl": "https://drew-website.pages.dev",
+  "navLinks": [
+    {
+      "label": "Projects",
+      "href": "/projects/"
+    },
+    {
+      "label": "Experience",
+      "href": "/#experience"
+    },
+    {
+      "label": "Skills",
+      "href": "/#skills"
+    }
+  ],
+  "socialLinks": [
+    {
+      "label": "GitHub",
+      "href": "https://github.com/dagadoci-lgtm"
+    }
+  ],
+  "footerText": "Built with Next.js, Pages CMS, and Cloudflare Pages."
+}

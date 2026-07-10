@@ -1,0 +1,45 @@
+{
+  "name": "drew-website",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "preview": "wrangler pages dev out",
+    "deploy": "pnpm build && wrangler pages deploy out",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "validate:content": "tsx scripts/validate-content.ts",
+    "validate": "pnpm validate:content && pnpm typecheck && pnpm lint && pnpm build"
+  },
+  "dependencies": {
+    "gray-matter": "^4.0.3",
+    "next": "^15.5.6",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "react-markdown": "^10.1.0",
+    "remark-gfm": "^4.0.1"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3.3.1",
+    "@types/node": "^24.7.2",
+    "@types/react": "^19.2.2",
+    "@types/react-dom": "^19.2.2",
+    "eslint": "^9.39.1",
+    "eslint-config-next": "^15.5.6",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3",
+    "wrangler": "^4.45.0",
+    "yaml": "^2.8.1"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "packageManager": "pnpm@9.15.4",
+  "pnpm": {
+    "overrides": {
+      "postcss": "^8.5.10"
+    }
+  }
+}

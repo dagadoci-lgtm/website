@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 800" role="img" aria-labelledby="title desc">
+  <title id="title">Abstract website refresh</title>
+  <desc id="desc">Editorial website layouts with bold type and warm colors.</desc>
+  <rect width="1280" height="800" fill="#efe5d8"/>
+  <rect x="100" y="90" width="490" height="620" rx="24" fill="#fffdf8" stroke="#17211f" stroke-width="4"/>
+  <rect x="650" y="90" width="530" height="620" rx="24" fill="#0d766e"/>
+  <rect x="150" y="145" width="180" height="16" rx="8" fill="#0d766e"/>
+  <rect x="150" y="230" width="360" height="45" rx="8" fill="#17211f"/>
+  <rect x="150" y="300" width="310" height="22" rx="8" fill="#17211f" opacity=".35"/>
+  <rect x="150" y="350" width="390" height="250" rx="16" fill="#d9e8e4"/>
+  <circle cx="915" cy="305" r="140" fill="#f4f1ea" opacity=".9"/>
+  <rect x="745" y="520" width="340" height="22" rx="11" fill="#fffdf8"/>
+  <rect x="790" y="570" width="250" height="14" rx="7" fill="#fffdf8" opacity=".65"/>
+</svg>
