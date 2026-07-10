@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 800" role="img" aria-labelledby="title desc">
+  <title id="title">Abstract product dashboard</title>
+  <desc id="desc">A dark analytics dashboard with charts and data cards.</desc>
+  <rect width="1280" height="800" fill="#182420"/>
+  <rect x="100" y="90" width="1080" height="620" rx="28" fill="#22332e" stroke="#6ca69a" stroke-width="3"/>
+  <rect x="150" y="150" width="250" height="160" rx="18" fill="#eff1e9"/>
+  <rect x="430" y="150" width="320" height="160" rx="18" fill="#0d766e"/>
+  <rect x="780" y="150" width="350" height="160" rx="18" fill="#314841"/>
+  <rect x="150" y="350" width="660" height="300" rx="18" fill="#f4f1ea"/>
+  <path d="M210 560 320 470l110 35 130-130 90 65 110-115" fill="none" stroke="#0d766e" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="840" y="350" width="290" height="300" rx="18" fill="#d9e8e4"/>
+  <circle cx="985" cy="495" r="78" fill="none" stroke="#0d766e" stroke-width="30" stroke-dasharray="330 160"/>
+</svg>

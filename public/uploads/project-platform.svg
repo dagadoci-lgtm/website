@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 800" role="img" aria-labelledby="title desc">
+  <title id="title">Abstract brand platform interface</title>
+  <desc id="desc">Layered cream, teal, and charcoal interface cards.</desc>
+  <rect width="1280" height="800" fill="#dbe8e2"/>
+  <circle cx="1120" cy="100" r="220" fill="#0d766e" opacity=".16"/>
+  <rect x="120" y="120" width="1040" height="560" rx="28" fill="#fffdf8" stroke="#17211f" stroke-width="4"/>
+  <rect x="120" y="120" width="230" height="560" rx="28" fill="#17211f"/>
+  <rect x="175" y="190" width="120" height="18" rx="9" fill="#fffdf8"/>
+  <rect x="175" y="260" width="100" height="12" rx="6" fill="#8fc9bd"/>
+  <rect x="175" y="300" width="130" height="12" rx="6" fill="#8fc9bd" opacity=".55"/>
+  <rect x="410" y="190" width="310" height="180" rx="18" fill="#f4f1ea"/>
+  <rect x="760" y="190" width="330" height="180" rx="18" fill="#0d766e"/>
+  <rect x="410" y="410" width="680" height="190" rx="18" fill="#e7e0d5"/>
+</svg>
