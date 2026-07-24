@@ -18,9 +18,10 @@
   ],
   "socialLinks": [
     {
-      "label": "GitHub",
-      "href": "https://github.com/dagadoci-lgtm"
-    }
+      "label": "email",
+      "href": "dagadoci@gmail.com"
+    },
+    {}
   ],
   "footerText": "Built with Next.js, Pages CMS, and Cloudflare Pages."
 }
