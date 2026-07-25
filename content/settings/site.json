@@ -18,10 +18,9 @@
   ],
   "socialLinks": [
     {
-      "label": "email",
+      "label": "Email",
       "href": "mailto:dagadoci@gmail.com"
-    },
-    {}
+    }
   ],
   "footerText": "Built with Next.js, Pages CMS, and Cloudflare Pages."
 }
